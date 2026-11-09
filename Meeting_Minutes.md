@@ -4,7 +4,7 @@ IT 4403 Term Project · Lawrence Ajayi & Shemar Glanville
 ---
 
 ## Oct 25, 2026
-**Format:** Email
+**Format:** Teams
 **Attendees:** Lawrence Ajayi
 - Lawrence emailed the full proposal draft to Shemar for review.
 - No response received before the submission deadline.
@@ -30,11 +30,13 @@ IT 4403 Term Project · Lawrence Ajayi & Shemar Glanville
 - Tested Discover, Search, Detail, genre filtering, pagination, and Watchlist; all working.
 - **Next:** Shemar runs WAVE accessibility scan on the live URL.
 
----
-<!-- Template for new entries -->
-## [Date]
-**Format:** Teams / In person / Email
-**Attendees:**
-- Discussed:
-- Decisions:
+## Nov 8, 2026
+**Format:** Teams chat
+**Attendees:** Lawrence Ajayi, Shemar Glanville
+- Discussed: Lawrence shared the live FlickPick URL after deploying with the TMDB API key. Desktop and mobile testing passed.
+- Decisions: Shemar will run the WAVE accessibility scan. Five polish fixes held for the final package.
 - Action items:
+  - Shemar: run WAVE on the Discover view and a movie detail view (Nov 9)
+  - Shemar: send the WAVE summary screenshot and details of any errors or contrast errors to Lawrence
+  - Lawrence: apply WAVE fixes and polish items, then redeploy the final build
+  - Lawrence: update README for final package
