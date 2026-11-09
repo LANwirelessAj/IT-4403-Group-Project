@@ -1,1 +1,26 @@
-<h1>FlipPick - COMING SOON</h1>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Find your next favorite movie with FlickPick. Browse, search, and save a personal watchlist.">
+<title>FlickPick | Find your next favorite</title>
+<link rel="stylesheet" href="css/styles.css">
+<script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script defer src="js/config.js"></script><script defer src="js/demo.js"></script><script defer src="js/app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to movies</a>
+<header><a class="brand" href="#discover" aria-label="FlickPick home"><span aria-hidden="true">◧</span> Flick<span>Pick</span></a><nav aria-label="Main navigation"><a href="#discover" data-view="discover">Discover</a><a href="#watchlist" data-view="watchlist">My Watchlist <span id="saved-count">0</span></a></nav></header>
+<main id="main" tabindex="-1">
+<section class="intro"><p class="eyebrow">A GOOD NIGHT STARTS WITH A GREAT MOVIE</p><h1>Less scrolling.<br>More <span>movie nights.</span></h1><p>Find something worth watching. Keep the ones you love.</p>
+<form id="search-form" role="search"><label for="search">Find a movie</label><div class="search-row"><input id="search" type="search" placeholder="Search by movie title…" autocomplete="off" aria-describedby="search-help"><button type="submit">Search</button></div><small id="search-help">Type two or more characters for suggestions.</small><ul id="suggestions" aria-label="Movie suggestions" hidden></ul></form></section>
+<p id="mode" class="notice" hidden></p><p id="status" role="status" aria-live="polite"></p>
+<section id="browse" aria-labelledby="view-title"><div class="section-heading"><div><p class="eyebrow" id="section-label">YOUR NEXT GREAT WATCH</p><h2 id="view-title" tabindex="-1">Discover movies</h2></div><label class="sort-label" for="sort">Sort <select id="sort"><option value="default">Recommended</option><option value="rating">Highest rated</option><option value="newest">Newest first</option><option value="title">Title A–Z</option></select></label></div>
+<div id="tabs" class="tabs" role="group" aria-label="Movie collection"><button type="button" data-collection="popular" aria-pressed="true">Popular now</button><button type="button" data-collection="top_rated" aria-pressed="false">Top rated</button></div>
+<div id="genres" class="genres" role="group" aria-label="Filter by genre"></div><p id="sort-help" class="muted"></p><div id="grid" class="grid"></div>
+<nav class="pagination" aria-label="Movie result pages"><button type="button" id="previous">← Previous</button><span id="page-label"></span><button type="button" id="next">Next →</button></nav></section>
+<section id="detail" hidden aria-labelledby="detail-title"></section>
+</main>
+<footer><div><a class="brand" href="#discover">Flick<span>Pick</span></a><p>Made for the love of movies.</p></div><details><summary>About & credits</summary><p>IT 4403 · Lawrence Ajayi & Shemar Glanville</p><p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p><a href="https://www.themoviedb.org/" aria-label="The Movie Database"><img width="100" alt="TMDB" src="https://www.themoviedb.org/assets/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" id="tmdb-logo"></a></details></footer>
+<noscript><p>Enable JavaScript to browse movies and use your watchlist.</p></noscript>
+</body></html>
